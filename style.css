@@ -130,6 +130,80 @@ body {
 .conteudo-secundario-2{
   font-family: 'Sarala', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   color: #ECD6C4;
+}
+
+.container {
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
+  margin: 20px;
+  border: 1px solid rgba(211, 52, 163, 0.53);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.container .card img {
+  transition: 0.5s;
+}
+
+.container .card h1 {
+  font-size: 2rem;
+}
+
+.container .card .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .content p {
+  color: #666;
+  transition: 0.5s;
+}
+
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgba(133, 34, 105, 0.53);
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+  outline: none;
+  margin-top: 20px;
+}
+
+.container .card:hover {
+  background-color:rgba(211, 52, 163, 0.53);
+  color: white;
+  margin-top: -30px;
+  box-shadow: 2px 20px 25px #dc2e685d;
+  border-color:rgba(211, 52, 163, 0.53);
+}
+
+.container .card:hover img {
+  filter: invert(1);
+}
+
+.container .card:hover .content p {
+  color: white;
+}
+
+.container .card:hover .content a{
+  color:rgba(211, 52, 163, 0.53);
+  background-color: white;
 }
