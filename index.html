@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Conheça o meu portifólio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <title>Portifólio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -12,15 +14,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
 </head>
 
 <body>
   <header class="cabecalho">
-    <img class="cabecalho-imagem" src="img/logo.png" alt="logo principal">
-    <nav class="icone">
-
-      <a class="cabecalho-menu-item" href="https://github.com/layanefervale">GITHUB 🟣</a>
-      <a class="cabecalho-menu-item" href="https://www.linkedin.com/in/layane-vale/">LINKEDIN 🟣</a>
+      <a class="cabecalho-menu-item" href="https://github.com/layanefervale">GITHUB </a>
+      <a class="cabecalho-menu-item" href="https://www.linkedin.com/in/layane-vale/">LINKEDIN </a>
       <a class="cabecalho-menu-item" href="https://www.tumblr.com/meuportifolio-layanevale/744769921344552960?source=share">CURRICULO</a>
     </nav>
   </header>
@@ -28,21 +28,15 @@
   <main class="conteudo">
     <section class="conteudo-principal">
       <div class="conteudo-principal-escrito">
-        <h1 class="conteudo-principal-escrito-titulo">LAYANE VALE </h1>
-        <h2 class="conteudo-principal-escrito-subtitulo"><strong>Front-End Developer & Web Designer</strong></h2>
-        <button class="conteudo-principal-escrito-botao">Contato 📲</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <h1 class="conteudo-principal-escrito-titulo"><strong>Layane Vale</strong> </h1>
+        <h2 class="conteudo-principal-escrito-subtitulo"><strong>Front-End Developer & Web Designer</strong></h2> 
       </div>
-      <img class="conteudo-principal-imagem"src="img/layane.png" alt="Imagem da layane">
-    </section>
-
-    <section class="conteudo-secundario">
-      <img class="imagem-apresentação" src="img/program..png" alt="imagem-apresentação">
-    </section>
+    </section>  
   </main>
 
   <section class="conteudo-paragrafo">
-      <h4 class="conteudo-secundario-titulo">Como posso te ajudar?</h4>
-      <p class="conteudo-secundario-2">Se você precisa de um site, aplicativo, arte gráfica, está no lugar certo!</p>
+      <h4 class="conteudo-secundario-titulo"><strong>Como posso te ajudar?</strong></h4>
     
     </section>
 
@@ -83,7 +77,7 @@
         <div class="img">
             <img src="img/ux.png">
         </div>
-        <h1>UI/UX Design</h1>
+         <h1>UI/UX Design</h1>
         <div class="content">
             <p>
               A experiência do usuário e a análise interativa com a aplicação
@@ -93,9 +87,84 @@
             <a href="https://api.whatsapp.com/send?phone=5561991379883&text=Ol%C3%A1,%20Sou%20Layane%20Vale!%20Voc%C3%AA%20ser%C3%A1%20redirecionado%20ao%20meu%20whatsapp.%20">Orçamento</a>
         </div>
     </div>
+    <div>
+      <h1 id="titulo">Olá, Desenvolvedor </h1>
+      <p id="subtitulo">Quer fechar uma parceria? 👉 </p>
+      <br>
+  </div>
+
+  <form>
+    <fieldset class="grupo">
+        <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="sobrenome"><strong>E-mail</strong></label>
+          <input type="text" name="sobrenome" id="sobrenome" required>
+      </div>
+  </fieldset>
+
+
+<div class="campo">
+  <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+  <label>
+      <input type="radio" name="devweb" value="frontend" checked>Front-end
+  </label>
+  <label>
+      <input type="radio" name="devweb" value="backend">Back-end
+  </label>
+  <label>
+      <input type="radio" name="devweb" value="fullstack">Fullstack
+  </label>
 </div>
 
+<div class="campo">
+  <label for="senioridade"><strong>Senioridade</strong></label>
+  <select id="senioridade" required>
+    <option selected disabled value="">Selecione</option>
+    <option>Júnior</option>
+    <option>Pleno</option>
+    <option>Sênior</option>
+  </select>
+</div>
+
+<fieldset class="grupo">
+  <div id="check">
+      <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+      <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+      <label for="tecnologia1"> HTML</label>
+      <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+      <label for="tecnologia2"> CSS</label>
+      <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+      <label for="tecnologia3"> JavaScript</label>
+      <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+      <label for="tecnologia4"> PHP</label>
+      <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+      <label for="tecnologia5"> C#</label>
+      <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+      <label for="tecnologia6"> Python</label>
+      <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Outra">
+      <label for="tecnologia7"> Outra</label>
+  </div>
+</fieldset>
+
+<div class="campo">
+  <br>
+  <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+  <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+  <button class="botao" type="submit" onsubmit="">Concluído</button>  
+</div>
+
+ 
+
+
 </body>
+
+
 
 </html>
 
